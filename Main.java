@@ -9,7 +9,12 @@ public class Main {
         for( int cs = 1; cs <= test; cs++ ){
             
             int n = sc.nextInt();
-            System.out.println(n-1);
+            int a[] = new int[n];
+            for( int i = 0; i < n; i++ ) a[i] = sc.nextInt();
+            Arrays.sort(a);
+
+            for( int value : a ) System.out.print(value + " ");
+            System.out.println();
         }
     }
 }
